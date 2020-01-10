@@ -13,6 +13,11 @@
 		F567C45023C912B300B688C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F567C44E23C912B300B688C6 /* Main.storyboard */; };
 		F567C45223C912B400B688C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567C45123C912B400B688C6 /* Assets.xcassets */; };
 		F567C45523C912B400B688C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F567C45323C912B400B688C6 /* LaunchScreen.storyboard */; };
+		F567C45D23C9135300B688C6 /* Places.plist in Resources */ = {isa = PBXBuildFile; fileRef = F567C45C23C9135300B688C6 /* Places.plist */; };
+		F567C45F23C9151B00B688C6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C45E23C9151B00B688C6 /* Place.swift */; };
+		F567C46323C9155C00B688C6 /* ic_place.png in Resources */ = {isa = PBXBuildFile; fileRef = F567C46023C9155C00B688C6 /* ic_place.png */; };
+		F567C46423C9155C00B688C6 /* ic_place_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F567C46123C9155C00B688C6 /* ic_place_2x.png */; };
+		F567C46523C9155C00B688C6 /* ic_place_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F567C46223C9155C00B688C6 /* ic_place_3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		F567C45123C912B400B688C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F567C45423C912B400B688C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F567C45623C912B400B688C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F567C45C23C9135300B688C6 /* Places.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Places.plist; sourceTree = "<group>"; };
+		F567C45E23C9151B00B688C6 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		F567C46023C9155C00B688C6 /* ic_place.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_place.png; sourceTree = "<group>"; };
+		F567C46123C9155C00B688C6 /* ic_place_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_place_2x.png; sourceTree = "<group>"; };
+		F567C46223C9155C00B688C6 /* ic_place_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_place_3x.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +70,14 @@
 				F567C44A23C912B300B688C6 /* SceneDelegate.swift */,
 				F567C44C23C912B300B688C6 /* ViewController.swift */,
 				F567C44E23C912B300B688C6 /* Main.storyboard */,
+				F567C45C23C9135300B688C6 /* Places.plist */,
 				F567C45123C912B400B688C6 /* Assets.xcassets */,
+				F567C46123C9155C00B688C6 /* ic_place_2x.png */,
+				F567C46223C9155C00B688C6 /* ic_place_3x.png */,
+				F567C46023C9155C00B688C6 /* ic_place.png */,
 				F567C45323C912B400B688C6 /* LaunchScreen.storyboard */,
 				F567C45623C912B400B688C6 /* Info.plist */,
+				F567C45E23C9151B00B688C6 /* Place.swift */,
 			);
 			path = OverlayDemo;
 			sourceTree = "<group>";
@@ -126,7 +141,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F567C45523C912B400B688C6 /* LaunchScreen.storyboard in Resources */,
+				F567C46423C9155C00B688C6 /* ic_place_2x.png in Resources */,
+				F567C46523C9155C00B688C6 /* ic_place_3x.png in Resources */,
 				F567C45223C912B400B688C6 /* Assets.xcassets in Resources */,
+				F567C46323C9155C00B688C6 /* ic_place.png in Resources */,
+				F567C45D23C9135300B688C6 /* Places.plist in Resources */,
 				F567C45023C912B300B688C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +160,7 @@
 				F567C44D23C912B300B688C6 /* ViewController.swift in Sources */,
 				F567C44923C912B300B688C6 /* AppDelegate.swift in Sources */,
 				F567C44B23C912B300B688C6 /* SceneDelegate.swift in Sources */,
+				F567C45F23C9151B00B688C6 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
