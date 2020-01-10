@@ -62,6 +62,10 @@ extension ViewController: MKMapViewDelegate {
         } else {
             let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "annotationView") ?? MKAnnotationView()
             annotationView.image = UIImage(named: "ic_place")
+            // Displays the information of the annotation
+            annotationView.canShowCallout = true
+            // Add button for the annotation
+            annotationView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
             return annotationView
         }
     }
@@ -90,4 +94,14 @@ extension ViewController: MKMapViewDelegate {
         return MKOverlayRenderer()
     }
     
+    // Adds functionality when accessory is tapped/clicked
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let annotation = view.annotation as? Place, let title = annotation.title else {
+            return
+        }
+        let alertController = UIAlertController(title: "Welcome to \(title)", message: "Have a nice day!", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true, completion: nil)
+    }
 }
